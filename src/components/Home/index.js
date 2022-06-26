@@ -14,6 +14,7 @@ import {
   faChevronRight,
   faChevronDown,
   faRefresh,
+  faPlay
 } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Tips from '../Tips';
@@ -24,7 +25,8 @@ library.add(
   faStar,
   faChevronRight,
   faChevronDown,
-  faRefresh
+  faRefresh,
+  faPlay
 );
 function Home(props) {
     return (

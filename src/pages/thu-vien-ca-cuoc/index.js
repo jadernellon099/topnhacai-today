@@ -1,16 +1,16 @@
 import React from "react";
 import Menu from "../../components/Menu";
 import TopHeader from "../../components/TopHeader";
-import AdsImage from "../../components/Sidebars/adsImage";
 import ToolBet from "../../components/Sidebars/toolBet";
 import Footer from "../../components/Footer/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import CategoryPost from "../../components/Category/CategoryPosts";
 import TrustBet from "../../components/Sidebars/trustBet";
-import CategoryPosts from "../../components/Category/CategoryPosts";
 
-function GamesPage(props) {
-  const breadTitle = "Trò Chơi";
-  const Tax =  `Tổng hợp các <strong>trò chơi casino</strong>, cá cược trực tuyến hot nhất hiện nay, cung cấp thông tin hữu ích về các <strong>trò chơi cá cược online</strong> mới nhất chính xác nhất`;
+function LibraryBetPage(props) {
+  const breadTitle = "Thư viện cá cược";
+  const Tax = `<a href="https://vaobo.com/" target="_blank" rel="noopener">Vào bờ</a> - Nơi chia sẻ những kiến thức hữu ích về cá cược online nhằm giúp bạn hiểu rỏ hơn về thị trường cá cược hiện nay... Cung cấp kiến thức từ cơ bản tới chuyên sâu về tất cả lĩnh vực cá cược, các thông tin cập nhât mới nhất từ các <a href="https://vaobo.com/nha-cai-uy-tin/" target="_blank" rel="noopener">nhà cái uy tín nhất việt nam</a>, nâng tầm kiến thức cho người chơi, tăng tỷ lệ chiến thắng khi tham gia cá cược online.`;
+
   return (
     <>
       <Menu />
@@ -23,14 +23,13 @@ function GamesPage(props) {
                 {
                   <>
                     <Breadcrumbs breadTitle={breadTitle} />
-                    <CategoryPosts title={breadTitle} tax={Tax} />
+                    <CategoryPost title={breadTitle} tax={Tax} />
                   </>
                 }
               </div>
               <div className="col span_3 bx_sidebar">
                 {
                   <>
-                    <AdsImage />
                     <TrustBet />
                     <ToolBet />
                   </>
@@ -45,4 +44,4 @@ function GamesPage(props) {
   );
 }
 
-export default GamesPage;
+export default LibraryBetPage;

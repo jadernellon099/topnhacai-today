@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-ContentGame.propTypes = {};
+CategoryPost.propTypes = {};
 
-function ContentGame(props) {
+function CategoryPost(props) {
 //   const [top, setTop] = useState(0);
 //   const [position, setPosition] = useState(0);
 //   useEffect(() => {
@@ -14,16 +14,16 @@ function ContentGame(props) {
 
 //     });
 //   });
-
+  const createMarkup = () => {
+    return {__html: props.tax};
+  }
   return (
     <div className="bxinner_archivepost" style={{ transform: "none" }}>
       <div className="bxtoptitle">
         <div className="bxinner">
-          <h1 className="font30">Trò chơi</h1>
+          <h1 className="font30">{props.title}</h1>
           <div className="des mb-4">
-            Tổng hợp các <strong>trò chơi casino</strong>, cá cược trực tuyến
-            hot nhất hiện nay, cung cấp thông tin hữu ích về các{" "}
-            <strong>trò chơi cá cược online</strong> mới nhất chính xác nhất
+            <p dangerouslySetInnerHTML={createMarkup()} ></p>
           </div>
           <div className="bxlistbytax_top">
             <div className="bxitem_post">
@@ -607,4 +607,4 @@ function ContentGame(props) {
   );
 }
 
-export default ContentGame;
+export default CategoryPost;

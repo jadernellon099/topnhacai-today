@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-library.add(faChevronDown);
+import { faChevronDown, faPlay } from "@fortawesome/free-solid-svg-icons";
+library.add(faChevronDown, faPlay);
 import Link from "next/link";
 
 function TopHeader(props) {
@@ -23,10 +23,10 @@ function TopHeader(props) {
                 <Image
                   className="stnd skip-lazy default-logo dark-version"
                   width={171}
-                  height={33}
+                  height={56}
                   alt={"Vào Bờ"}
                   src={
-                    "https://vaobo.com/wp-content/uploads/2021/09/Vector-Smart-Object.png?v=1655967977"
+                    "https://topnhacai.today/wp-content/uploads/2022/06/top-nha-cai-ts-1024x417-1.png"
                   }
                 />
               </Link>

@@ -1,9 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
-Tips.propTypes = {};
 
 function Tips(props) {
   return (
