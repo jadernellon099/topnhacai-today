@@ -20377,13 +20377,18 @@ ul, ol {
   display: block;
   -webkit-transition: all .5s;
   transition: all .5s;
-  box-shadow: 0 2px 10px 0 #e5e7ec
+  box-shadow: 0 2px 10px 0 #e5e7ec;
+  padding-bottom: 20px;
 }
 
 #top nav ul.sf-menu li.menu-item-has-children>ul li>a {
-  padding: 12px 20px;
+  padding: 17px 20px;
   color: #000;
   font-size: 14px
+}
+
+#top nav ul.sf-menu li.menu-item-has-children>ul li>a:hover {
+  color: #1877f2;
 }
 
 #top nav ul.sf-menu li a .sf-sub-indicator {
@@ -30398,10 +30403,12 @@ body.search-results .container-wrap .main-content {
 }
 
 .name-club {
-  display: block;
+  display: flex;
   position: relative;
   color: #333;
-  font-size: 16px
+  font-size: 13px;
+  align-items: center;
+  justify-content: end;
 }
 
 .club1 .logo-club {
@@ -30456,7 +30463,10 @@ body.search-results .container-wrap .main-content {
 
 .club2 {
   text-align: left;
-  padding-left: 35px
+  padding-left: 35px;
+  font-size: 13px;
+  justify-content: left;
+  flex-direction: row-reverse;
 }
 
 .row_match_info {
@@ -36053,4 +36063,25 @@ span.giakm svg {
   body[data-full-width-header=false] #slide-out-widget-area.slide-out-from-right-hover .slide_out_area_close {
     display: none
   }
+}
+
+button.butoniframe:hover {
+  background: #3452ff;
+  color: white;
+}
+button.butoniframe {
+  height: 35px;
+  margin-right: 15px;
+  background: #0075ff;
+  color: white;
+  border: none;
+  width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+button.butoniframe.active {
+  background: #5574a7;
+  color: white;
 }

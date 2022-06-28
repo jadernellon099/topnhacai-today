@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from "next/link"
 import  { library } from '@fortawesome/fontawesome-svg-core';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';  
 library.add( faMagnifyingGlass );
@@ -17,61 +17,61 @@ function Menu(props) {
                     id="menu-item-23208"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-23208"
                   >
-                    <a href="">
+                    <Link href="/soi-keo-bong-da">
                       Soi kèo bóng đá
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-14124"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-14124"
                   >
-                    <a href="">
+                    <Link href="">
                       Máy tính dự đoán
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-5422"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5422"
                   >
-                    <a href="">
+                    <Link href="">
                       Lịch sử đối đầu
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-51160"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-51160"
                   >
-                    <a href="">
+                    <Link href="/ket-qua-bong-da">
                       Kết quả bóng đá
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-14123"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-14123"
                   >
-                    <a href="">Tỷ lệ bóng đá</a>
+                    <Link href="/ty-le-bong-da">Tỷ lệ bóng đá</Link>
                   </li>
                   <li
                     id="menu-item-4314"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4314"
                   >
-                    <a href="">
+                    <Link href="/link-vao-nha-cai">
                       Link vào nhà cái
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-1229"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1229"
                   >
-                    <a href="">
+                    <Link href="/so-sanh-nha-cai">
                       So Sánh Nhà Cái
-                    </a>
+                    </Link>
                   </li>
                   <li
                     id="menu-item-7451"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-7451"
                   >
-                    <a href="">Gái Xinh</a>
+                    <Link href="/gai-xinh">Gái Xinh</Link>
                   </li>
                 </ul>
               </div>
@@ -79,7 +79,7 @@ function Menu(props) {
             <div className="ctspan_4 topbar_right">
               <div className="btnsearch">
                 <button className="btn_search_call">
-                <FontAwesomeIcon icon={['fas', 'fa-magnifying-glass']} /> 
+                {/* <FontAwesomeIcon icon={['fas', 'fa-magnifying-glass']} />  */}
                 </button>
                 <span className="lang">
                   <Image
