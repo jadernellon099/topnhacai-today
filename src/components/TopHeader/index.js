@@ -66,11 +66,11 @@ function TopHeader(props) {
                       <a>
                         <span className="menu-title-text">Nhà cái uy tín</span>
                         <span className="sf-sub-indicator">
-                          <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} />
+                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
                         </span>
                       </a>
                     </Link>
-                    <ul className="sub-menu tracked-pos">
+                    {/* <ul className="sub-menu tracked-pos">
                       <li
                         id="menu-item-5344"
                         className="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-5344"
@@ -99,7 +99,7 @@ function TopHeader(props) {
                           </a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li
                     id="menu-item-19654"
@@ -141,11 +141,11 @@ function TopHeader(props) {
                       <a>
                         <span className="menu-title-text">Thư Viện</span>
                         <span className="sf-sub-indicator">
-                          <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} />
+                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
                         </span>
                       </a>
                     </Link>
-                    <ul className="sub-menu tracked-pos">
+                    {/* <ul className="sub-menu tracked-pos">
                       <li
                         id="menu-item-5339"
                         className="menu-item menu-item-type-taxonomy menu-item-object-category nectar-regular-menu-item menu-item-5339"
@@ -184,7 +184,7 @@ function TopHeader(props) {
                           <a className="menu-title-text">Tin thể thao</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li
                     id="menu-item-7707"
@@ -194,11 +194,11 @@ function TopHeader(props) {
                       <a>
                         <span className="menu-title-text">Video</span>
                         <span className="sf-sub-indicator">
-                          <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} />
+                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
                         </span>
                       </a>
                     </Link>
-                    <ul className="sub-menu">
+                    {/* <ul className="sub-menu">
                       <li
                         id="menu-item-7719"
                         className="menu-item menu-item-type-taxonomy menu-item-object-tax_highlight nectar-regular-menu-item menu-item-7719"
@@ -217,7 +217,7 @@ function TopHeader(props) {
                           <a className="menu-title-text">Video bóng đá</a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li
                     id="menu-item-63110"
@@ -227,11 +227,11 @@ function TopHeader(props) {
                       <a>
                         <span className="menu-title-text">Công cụ cá cược</span>
                         <span className="sf-sub-indicator">
-                          <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} />
+                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
                         </span>
                       </a>
                     </Link>
-                    <ul className="sub-menu">
+                    {/* <ul className="sub-menu">
                       <li
                         id="menu-item-63111"
                         className="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-63111"
@@ -280,7 +280,7 @@ function TopHeader(props) {
                           </a>
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li
                     id="menu-item-107655"

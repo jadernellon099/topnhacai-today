@@ -1,9 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
-PostsSport.propTypes = {
-    
-};
 
 function PostsSport(props) {
     return (
@@ -22,11 +17,11 @@ function PostsSport(props) {
                                     backgroundRepeat: 'no-repeat',
                                     backgroundSize: "cover"
                                 }}> 
-                                <a href="https://vaobo.com/nhan-dinh-yokohama-f-marinos-vs-kashiwa-reysol-14h00-ngay-25-06/"
+                                <a href="nhan-dinh-yokohama-f-marinos-vs-kashiwa-reysol-14h00-ngay-25-06/"
                                     title="Nhận định Yokohama F Marinos vs Kashiwa Reysol, 14h00 ngày 25/06" rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-yokohama-f-marinos-vs-kashiwa-reysol-14h00-ngay-25-06/"
+                                <a href="nhan-dinh-yokohama-f-marinos-vs-kashiwa-reysol-14h00-ngay-25-06/"
                                     title="Nhận định Yokohama F Marinos vs Kashiwa Reysol, 14h00 ngày 25/06"
                                  rel="dofollow">Nhận định Yokohama F Marinos vs Kashiwa Reysol, 14h00
                                     ngày 25/06</a>
@@ -46,12 +41,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-cangzhou-mighty-lions-vs-beijing-guoan-15h30-ngay-25-06/"
+                                <a href="nhan-dinh-cangzhou-mighty-lions-vs-beijing-guoan-15h30-ngay-25-06/"
                                     title="Nhận định Cangzhou Mighty Lions vs Beijing Guoan, 15h30 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-cangzhou-mighty-lions-vs-beijing-guoan-15h30-ngay-25-06/"
+                                <a href="nhan-dinh-cangzhou-mighty-lions-vs-beijing-guoan-15h30-ngay-25-06/"
                                     title="Nhận định Cangzhou Mighty Lions vs Beijing Guoan, 15h30 ngày 25/06"
                                  rel="dofollow">Nhận định Cangzhou Mighty Lions vs Beijing Guoan,
                                     15h30 ngày 25/06</a>
@@ -72,12 +67,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-jeonbuk-hyundai-motors-vs-daegu-fc-16h00-ngay-25-06/"
+                                <a href="nhan-dinh-jeonbuk-hyundai-motors-vs-daegu-fc-16h00-ngay-25-06/"
                                     title="Nhận định Jeonbuk Hyundai Motors vs Daegu FC, 16h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-jeonbuk-hyundai-motors-vs-daegu-fc-16h00-ngay-25-06/"
+                                <a href="nhan-dinh-jeonbuk-hyundai-motors-vs-daegu-fc-16h00-ngay-25-06/"
                                     title="Nhận định Jeonbuk Hyundai Motors vs Daegu FC, 16h00 ngày 25/06"
                                  rel="dofollow">Nhận định Jeonbuk Hyundai Motors vs Daegu FC, 16h00
                                     ngày 25/06</a>
@@ -99,12 +94,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -124,12 +119,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -149,12 +144,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -174,12 +169,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -199,12 +194,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -224,12 +219,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -249,12 +244,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -274,12 +269,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -299,12 +294,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -324,12 +319,12 @@ function PostsSport(props) {
                                     backgroundSize: "cover"
                                 }}
                                 >
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow"></a>
                             </div>
                             <div className="bxnd">
-                                <a href="https://vaobo.com/nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
+                                <a href="nhan-dinh-suwon-fc-vs-suwon-samsung-bluewings-17h00-ngay-25-06/"
                                     title="Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00 ngày 25/06"
                                  rel="dofollow">Nhận định Suwon FC vs Suwon Samsung Bluewings, 17h00
                                     ngày 25/06</a>
@@ -345,21 +340,21 @@ function PostsSport(props) {
                 <div className="navigation_ct">
                     <div className="bxinner">
                         <div className="first_paged"><a className="page-numbers"
-                                href="https://vaobo.com/nhan-dinh-bong-da/">«</a></div>
+                                href="nhan-dinh-bong-da/">«</a></div>
                         <div className="paginate">
                             <ul className="page-numbers">
                                 <li><span aria-current="page" className="page-numbers current">1</span></li>
-                                <li><a className="page-numbers" href="https://vaobo.com/nhan-dinh-bong-da/page/2/">2</a>
+                                <li><a className="page-numbers" href="nhan-dinh-bong-da/page/2/">2</a>
                                 </li>
-                                <li><a className="page-numbers" href="https://vaobo.com/nhan-dinh-bong-da/page/3/">3</a>
+                                <li><a className="page-numbers" href="nhan-dinh-bong-da/page/3/">3</a>
                                 </li>
                                 <li><span className="page-numbers dots">…</span></li>
-                                <li><a className="page-numbers" href="https://vaobo.com/nhan-dinh-bong-da/page/183/">183</a>
+                                <li><a className="page-numbers" href="nhan-dinh-bong-da/page/183/">183</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="last_paged"><a className="page-numbers"
-                                href="https://vaobo.com/nhan-dinh-bong-da/page/183/">»</a></div>
+                                href="nhan-dinh-bong-da/page/183/">»</a></div>
                     </div>
                 </div>
             </div>

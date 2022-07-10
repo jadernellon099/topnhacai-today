@@ -23,7 +23,7 @@ function Tips(props) {
               </span>
             </div>
             <p className="headtips-uptime">
-              <FontAwesomeIcon icon={["fas", "fa-refresh"]} />
+              <FontAwesomeIcon icon={["fas", "fa-refresh"]} style={{marginRight: "5px"}} />
               Cập nhật: 30 phút trước
             </p>
           </div>

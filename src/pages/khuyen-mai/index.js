@@ -48,8 +48,8 @@ function PromotionsPage(props) {
               <div className="col span_3 bx_sidebar">
                 {
                   <>
-                    <PostList postSidebar={postSidebar1} />
-                    <PostList postSidebar={postSidebar2} />
+                    {/* <PostList postSidebar={postSidebar1} />
+                    <PostList postSidebar={postSidebar2} /> */}
                     <ToolBet />
                     <CompareBets />
                     <SexyImageList />

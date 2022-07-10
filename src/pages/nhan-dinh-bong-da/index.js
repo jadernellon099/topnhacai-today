@@ -2,33 +2,51 @@ import React from "react";
 import Menu from "../../components/Menu";
 import TopHeader from "../../components/TopHeader";
 import AdsImage from "../../components/Sidebars/adsImage";
-import PostList from "../../components/Sidebars/postList";
 import ToolBet from "../../components/Sidebars/toolBet";
 import SexyImageList from "../../components/Sidebars/sexyImageList";
 import Footer from "../../components/Footer/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import TaxDescription from "../../components/TaxDescription";
 import Content from "../../components/Content";
+import useSWR from "swr";
 import TrustBet from "../../components/Sidebars/trustBet";
 import PostsSport from "../../components/FootballCommentary/postsSport";
 import TipsPremium from "../../components/Sidebars/tipsPremium";
+import Loading from "../../components/Loading";
 
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 function FootballCommentary(props) {
-    const postSidebar1 = {
-        title: "Highlight bóng đá",
-        mark: "HOT",
-        bgColor: "#ff4b00",
-      };
-      const postSidebar2 = {
-        title: "Cá độ bóng đá",
-        mark: "HOT",
-        bgColor: "#ff4b00",
-      };
-  const breadTitle = "Nhận định bóng đá kèo nhà cái hôm nay từ chuyên gia";
-  const Tax = {
-    taxTitle: "Nhận định bóng đá kèo nhà cái hôm nay từ chuyên gia",
-    taxDescription: `<strong><a href="/nhan-dinh-bong-da/">Nhận định bóng đá</a> kèo nhà cái</strong> – Tổng hợp các bài viết nhận <strong>định bóng đá hôm nay và ngày mai</strong>, soi kèo nhà cái, phân tích trận đấu, dự đoán kết quả đối đầu chính xác nhất. Nhận định bóng đá đến từ chuyên gia <a href="/">Topnhacai.today</a> liên tục cập nhật hằng ngày đầy đủ các giải đấu trong nước và trên khắp thế giới… Tại đây chúng tôi sẽ giúp bạn có cái nhìn tổng quan về các trận đấu sắp được bắt đầu và đưa ra quyết định đặt cược tốt nhất.`,
+  const postSidebar1 = {
+    title: "Highlight bóng đá",
+    mark: "HOT",
+    bgColor: "#ff4b00",
   };
+  const postSidebar2 = {
+    title: "Cá độ bóng đá",
+    mark: "HOT",
+    bgColor: "#ff4b00",
+  };
+  const { data: pageData, error: pageError } = useSWR(
+    `${process.env.api_topnhacai}/pages/getBySlug/nhan-dinh-bong-da`,
+    fetcher
+  );
+  if (pageError) return <div>Failed to load</div>;
+  if (!pageData) {
+    return <Loading />;
+  }
+  console.log(pageData);
+
+  // const { data: category } = useSWR(
+  //   `${process.env.api_topnhacai}/pages/page/search?q=nhan-dinh-bong-da`,
+  //   fetcher
+  // );
+
+  const breadTitle = pageData.page_category_name;
+  const Tax = {
+    taxTitle: pageData.page_title,
+    taxDescription: pageData.page_description,
+  };
+
   return (
     <>
       <Menu />
@@ -43,7 +61,7 @@ function FootballCommentary(props) {
                     <Breadcrumbs breadTitle={breadTitle} />
                     <TaxDescription Tax={Tax} />
                     <PostsSport />
-                    <Content />
+                    <Content data={pageData} />
                   </>
                 }
               </div>
@@ -53,8 +71,8 @@ function FootballCommentary(props) {
                     <AdsImage />
                     <TipsPremium />
                     <TrustBet />
-                    <PostList postSidebar={postSidebar1} />
-                    <PostList postSidebar={postSidebar2} />
+                    {/* <PostList postSidebar={postSidebar1} />
+                    <PostList postSidebar={postSidebar2} /> */}
                     <ToolBet />
                     <SexyImageList />
                   </>

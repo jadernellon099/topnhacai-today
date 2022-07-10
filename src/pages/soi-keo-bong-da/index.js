@@ -48,9 +48,9 @@ function FootballBettingPage(props) {
                 {
                   <>
                     <AdsImage />
-                    <PostList postSidebar={postSidebar1} />
+                    {/* <PostList postSidebar={postSidebar1} /> */}
                     <TrustBet />
-                    <PostList postSidebar={postSidebar2} />
+                    {/* <PostList postSidebar={postSidebar2} /> */}
                     <ToolBet />
                   </>
                 }

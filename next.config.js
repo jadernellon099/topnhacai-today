@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['vaobo.com', 'topnhacai.today', 'api.vaobo.com'],
+    domains: ['vaobo.com', 'topnhacai.today', 'api.vaobo.com', 'topnhacai.b-cdn.net'],
+  },
+  env: {
+    api: 'https://62bbd4adeff39ad5ee15c6d1.mockapi.io/',
+    api_topnhacai: "https://api.topnhacai.today/api"
   },
 }
 

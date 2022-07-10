@@ -4,11 +4,10 @@ import Home from "../../components/Home";
 import Menu from "../../components/Menu";
 import AdsImage from "../../components/Sidebars/adsImage";
 import CompareBets from "../../components/Sidebars/compareBets";
-import PostList from "../../components/Sidebars/postList";
 import SexyImageList from "../../components/Sidebars/sexyImageList";
 import ToolBet from "../../components/Sidebars/toolBet";
-import TopHeader from "../../components/TopHeader/";
-HomePage.propTypes = {};
+import TopHeader from "../../components/TopHeader";
+import PostsListSB from "../../containers/Sidebars/PostsListSB";
 
 function HomePage(props) {
   const postSidebar1 = {
@@ -22,6 +21,7 @@ function HomePage(props) {
     mark: "New",
     bgColor: "#19a0e9",
   };
+
   return (
     <>
       <Menu />
@@ -30,7 +30,7 @@ function HomePage(props) {
         <div className="container-wrap container_nc_home">
           <div className="container main-content">
             <div className="tieude_ds">
-              <h1>Bảng xếp hạng nhà cái cập nhật 05/2022</h1>
+              <h1>Bảng xếp hạng nhà cái cập nhật 07/2022</h1>
             </div>
             <div className="row">
               <div className="col span_9 bxcontainer">{<Home />}</div>
@@ -38,8 +38,8 @@ function HomePage(props) {
                 {
                   <>
                     <AdsImage />
-                    <PostList postSidebar={postSidebar1} />
-                    <PostList postSidebar={postSidebar2} />
+                    <PostsListSB postSidebar={postSidebar1} category="1" />
+                    <PostsListSB postSidebar={postSidebar2} category="2" />
                     <ToolBet />
                     <CompareBets />
                     <SexyImageList />

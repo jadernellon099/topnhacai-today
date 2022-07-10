@@ -1,11 +1,10 @@
-import React from 'react';
-import ListRate from './listRate';
+import React from "react";
+import Link from "next/link";
 import Image from "next/image";
-import NewsList from './newsList';
-// import Tips from '../tips';
-import HightLightList from './hightlightList';
-import ColListNews from './colListNews';
-import ColListNews2 from './colListNews2';
+import HightLightList from "./hightlightList";
+import ColListNews from "./colListNews";
+import ColListNews2 from "./colListNews2";
+import * as img from "../../const/Image";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGift,
@@ -13,11 +12,18 @@ import {
   faStar,
   faChevronRight,
   faChevronDown,
+  faChevronUp,
   faRefresh,
-  faPlay
+  faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import Tips from '../Tips';
+import Tips from "../Tips";
+import CommentaryList from "../../containers/News/CommentaryList";
+import DealersList from "../../containers/News/DealersList";
+import CallApiFootballList from "../../pages/api/callApiFootballList";
+import GetHightLightList from "../../containers/News/GetHightLightList";
+import PostsNewsList from "../../containers/News/PostsListNews";
+import PostsNewsList2 from "../../containers/News/PostsListNews2";
 library.add(
   fab,
   faGift,
@@ -25,80 +31,84 @@ library.add(
   faStar,
   faChevronRight,
   faChevronDown,
+  faChevronUp,
   faRefresh,
   faPlay
 );
 function Home(props) {
-    return (
-        <>
-          <ListRate />
-          <div className="bxbannerqq">
-            <div className="bxinner">
-              <div className="bximg">
-                <a
-                  href="https://vaobo.com/link/w88"
-                  rel="nofollow"
-                  className="seoquake-nofollow"
-                >
-                  <Image
-                    data-lazyloaded="1"
-                    src="https://vaobo.com/wp-content/uploads/2021/09/bb2.jpg?v=1655975657"
-                    data-src="https://vaobo.com/wp-content/uploads/2021/09/bb2.jpg?v=1655975657"
-                    width="1045"
-                    height="83"
-                    alt="bb2"
-                    data-ll-status="loaded"
-                    className="entered litespeed-loaded"
-                  />
-                </a>
-              </div>
+  return (
+    <>
+      <DealersList />
+      <div className="bxbannerqq">
+        <div className="bxinner">
+          <div className="bximg">
+            <Link
+              href="https://vaobo.com/link/w88"
+              rel="nofollow"
+              className="seoquake-nofollow"
+            >
+              <Image
+                data-lazyloaded="1"
+                src={img.ADS1}
+                data-src={img.ADS1}
+                width="1045"
+                height="83"
+                alt="bb2"
+                data-ll-status="loaded"
+                className="entered litespeed-loaded"
+              />
+            </Link>
+          </div>
+        </div>
+      </div>
+      <CommentaryList />
+      <Tips />
+      {/* <CallApiFootballList /> */}
+      <GetHightLightList />
+      {/* <HightLightList /> */}
+      <PostsNewsList />
+      <div className="bxbannerqq">
+        <div className="bxinner">
+          <div className="bxflex bxflex_mg">
+            <div className="bxw50 bximg">
+              <Link
+                href="https://vaobo.com/link/fb88"
+                rel="nofollow"
+                className="seoquake-nofollow"
+              >
+                <Image
+                  data-lazyloaded="1"
+                  src={img.ADS2}
+                  data-src={img.ADS2}
+                  width="511"
+                  height="90"
+                  alt="banner-1"
+                />
+              </Link>
+            </div>
+            <div className="bxw50 bximg">
+              <Link
+                href="https://vaobo.com/link/m88"
+                rel="nofollow"
+                className="seoquake-nofollow"
+              >
+                <Image
+                  data-lazyloaded="1"
+                  src={img.ADS3}
+                  data-src={img.ADS3}
+                  width="511"
+                  height="90"
+                  alt="banner-2"
+                />
+              </Link>
             </div>
           </div>
-          <NewsList />
-          <Tips />
-          <HightLightList />
-          <ColListNews />
-          <div className="bxbannerqq">
-            <div className="bxinner">
-              <div className="bxflex bxflex_mg">
-                <div className="bxw50 bximg">
-                  <a
-                    href="https://vaobo.com/link/fb88"
-                    rel="nofollow"
-                    className="seoquake-nofollow"
-                  >
-                    <Image
-                      data-lazyloaded="1"
-                      src="https://vaobo.com/wp-content/uploads/2021/08/banner-1.png?v=1655975657"
-                      data-src="https://vaobo.com/wp-content/uploads/2021/08/banner-1.png?v=1655975657"
-                      width="511"
-                      height="90"
-                      alt="banner-1"
-                    />
-                  </a>
-                </div>
-                <div className="bxw50 bximg">
-                  <a
-                    href="https://vaobo.com/link/m88"
-                    rel="nofollow"
-                    className="seoquake-nofollow"
-                  >
-                    <Image
-                      data-lazyloaded="1"
-                      src="https://vaobo.com/wp-content/uploads/2021/08/banner-2.png?v=1655975657"
-                      data-src="https://vaobo.com/wp-content/uploads/2021/08/banner-2.png?v=1655975657"
-                      width="511"
-                      height="90"
-                      alt="banner-2"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <ColListNews2 />
-        </>
-    );
+        </div>
+      </div>
+
+      <PostsNewsList2 />
+    </>
+  );
 }
 
 export default Home;

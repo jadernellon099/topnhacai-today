@@ -1,8 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Image from "next/image";
-
-ToolBet.propTypes = {};
+import Link from "next/link";
 
 function ToolBet(props) {
   return (
@@ -16,24 +14,27 @@ function ToolBet(props) {
           <div className="bxlist_tool">
             <div className="item"></div>
             <div className="item">
-              <a href="https://vaobo.com/ty-le-bong-da/">
-                <span className="icon">
-                  <span>
-                    <Image
-                      data-lazyloaded="1"
-                      src="https://vaobo.com/wp-content/uploads/2021/08/1-1.png?v=1655975658"
-                      data-src="https://vaobo.com/wp-content/uploads/2021/08/1-1.png?v=1655975658"
-                      width="16"
-                      height="9"
-                      alt="1-1"
-                    />
+              <Link href="/ty-le-bong-da/">
+                <a>
+                  <span className="icon">
+                    <span>
+                      <Image
+                        data-lazyloaded="1"
+                        src="https://vaobo.com/wp-content/uploads/2021/08/1-1.png?v=1655975658"
+                        data-src="https://vaobo.com/wp-content/uploads/2021/08/1-1.png?v=1655975658"
+                        width="16"
+                        height="9"
+                        alt="1-1"
+                      />
+                    </span>
                   </span>
-                </span>
-                <span className="title">Tỷ lệ bóng đá</span>
-              </a>
+                  <span className="title">Tỷ lệ bóng đá</span>
+                </a>
+              </Link>
             </div>
             <div className="item">
-              <a href="https://vaobo.com/nhan-dinh-bong-da/">
+              <Link href="/nhan-dinh-bong-da/">
+              <a>
                 <span className="icon">
                   <span>
                     <Image
@@ -47,10 +48,12 @@ function ToolBet(props) {
                   </span>
                 </span>
                 <span className="title">Nhận định bóng đá</span>
-              </a>
+                </a>
+              </Link>
             </div>
             <div className="item">
-              <a href="https://vaobo.com/soi-keo-bong-da/">
+              <Link href="/soi-keo-bong-da/">
+              <a>
                 <span className="icon">
                   <span>
                     <Image
@@ -64,10 +67,12 @@ function ToolBet(props) {
                   </span>
                 </span>
                 <span className="title">Soi kèo bóng đá</span>
-              </a>
+                </a>
+              </Link>
             </div>
             <div className="item">
-              <a href="https://vaobo.com/lich-su-doi-dau/">
+              <Link href="/lich-su-doi-dau/">
+              <a>
                 <span className="icon">
                   <span>
                     <Image
@@ -81,10 +86,12 @@ function ToolBet(props) {
                   </span>
                 </span>
                 <span className="title">Lịch sử đối đầu</span>
-              </a>
+                </a>
+              </Link>
             </div>
-            <div className="item">
-              <a href="https://vaobo.com/may-tinh-du-doan/">
+            {/* <div className="item">
+              <a href="/may-tinh-du-doan/">
+              <a></a>
                 <span className="icon">
                   <span>
                     <Image
@@ -100,7 +107,7 @@ function ToolBet(props) {
                 <span className="title">Máy tính dự đoán</span>
               </a>
             </div>
-            <div className="item"></div>
+            <div className="item"></div> */}
           </div>
         </div>
       </div>

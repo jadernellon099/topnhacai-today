@@ -22,18 +22,10 @@ function Menu(props) {
                     </Link>
                   </li>
                   <li
-                    id="menu-item-14124"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-14124"
-                  >
-                    <Link href="">
-                      Máy tính dự đoán
-                    </Link>
-                  </li>
-                  <li
                     id="menu-item-5422"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5422"
                   >
-                    <Link href="">
+                    <Link href="/lich-su-doi-dau">
                       Lịch sử đối đầu
                     </Link>
                   </li>

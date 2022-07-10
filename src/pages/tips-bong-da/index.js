@@ -3,6 +3,7 @@ import Menu from "../../components/Menu";
 import TopHeader from "../../components/TopHeader";
 import AdsImage from "../../components/Sidebars/adsImage";
 import PostList from "../../components/Sidebars/postList";
+import useSWR from "swr";
 import CompareBets from "../../components/Sidebars/compareBets";
 import SexyImageList from "../../components/Sidebars/sexyImageList";
 import Footer from "../../components/Footer/Footer";
@@ -12,6 +13,8 @@ import Content from "../../components/Content";
 import TrustBet from "../../components/Sidebars/trustBet";
 import Tips from "../../components/Tips";
 import SumWebsite from "../../components/FootballTips/sumWebsite";
+import Loading from "../../components/Loading";
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 function FootballTipsPage(props) {
   const postSidebar1 = {
@@ -24,12 +27,22 @@ function FootballTipsPage(props) {
     mark: "HOT",
     bgColor: "#f82045",
   };
-  const breadTitle = "Top 10 nhà cái uy tín tốt nhất Việt Nam & Thế Giới 2022";
+
+  const { data, error } = useSWR(
+    `${process.env.api_topnhacai}/pages/getBySlug/tips-bong-da`,
+    fetcher
+  );
+  if (error) return <div>Failed to load</div>;
+  if (!data) {
+    return <Loading />;
+  }
+  console.log(data);
+  const breadTitle = data.page_category_name;
   const Tax = {
-    taxTitle: "Top 10 nhà cái uy tín tốt nhất Việt Nam & Thế Giới 2022",
-    taxDescription: `<strong>Nhà cái nào uy tín nhất Việt Nam</strong>? Tìm <a href="https://vaobo.com/nha-cai-uy-tin/" target="_blank" rel="noopener"><strong> nhà cái uy tín </strong></a> để đăng ký tham gia cá cược? Là câu hỏi mà chúng tôi bắt gặp nhiều
-            nhất trên các cộng đồng cá độ. Để chọn một nhà cái uy tín nhất giữa hàng nghìn trang cá cược đang hoạt động là điều không thể nếu bạn là người mới. Hiểu được điều này, chúng tôi đã đưa ra bảng xếp hạng các nhà cái cá độ tốt nhất được chuyên gia vaobo.com đánh giá dựa trên độ uy tín của từng nhà cái và số lượt bình chọn của cộng đồng cá cược. Dưới đây là  <strong> Bảng xếp hạng Top 10 trang cá cược uy tín tốt nhất năm 2022</strong>.`,
+    taxTitle: data.page_title,
+    taxDescription: data.page_description,
   };
+
   return (
     <>
       <Menu />
@@ -45,7 +58,7 @@ function FootballTipsPage(props) {
                     <TaxDescription Tax={Tax} />
                     <Tips />
                     <SumWebsite />
-                    <Content />
+                    <Content data={data} />
                   </>
                 }
               </div>
@@ -53,8 +66,8 @@ function FootballTipsPage(props) {
                 {
                   <>
                     <AdsImage />
-                    <PostList postSidebar={postSidebar1} />
-                    <PostList postSidebar={postSidebar2} />
+                    {/* <PostList postSidebar={postSidebar1} />
+                    <PostList postSidebar={postSidebar2} /> */}
                     <TrustBet />
                     <CompareBets />
                     <SexyImageList />

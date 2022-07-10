@@ -22081,7 +22081,7 @@ button.bximg_selected {
   border: 1px solid #ccc;
   border-radius: 5px;
   background: #fff;
-  padding: 12px 30px 12px 8px;
+  padding: 12px 8px 12px 8px;
   text-align: left;
   position: relative
 }
@@ -22091,7 +22091,7 @@ button.bximg_selected {
 }
 
 button.bximg_selected:before {
-  content: "\f078";
+  /* content: "\f078"; */
   font-family: FontAwesome;
   position: absolute;
   right: 5px;
@@ -23828,6 +23828,30 @@ div.table-tips table tr td .status-tips.status-lose, .table-tips table tr td .st
 
 .bxbo_tt_inner {
   padding: 15px
+}
+.bxssvb.lsdd_today {
+  margin-bottom: 20px;
+}
+svg.svg-inline--fa.fa-plus {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #1877f2;
+  font-size: 8px;
+  border-radius: 100px;
+  line-height: 14px;
+  margin: 0 10px 0 0;
+  color: #1877f2;
+}
+
+svg.svg-inline--fa.fa-minus {
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 100px;
+  line-height: 14px;
+  margin: 0 10px 0 0;
+  border: 1px solid #f82a4d;
+  color: #f82a4d;
 }
 
 .bxbo_tt_inner.bximg {
@@ -36085,3 +36109,5 @@ button.butoniframe.active {
   background: #5574a7;
   color: white;
 }
+
+/**/

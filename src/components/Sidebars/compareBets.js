@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import Link from 'next/link';
 import Image from "next/image";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -21,11 +21,11 @@ function CompareBets(props) {
         <div className="bxinner">
           <div className="title bxwidget_title">
             <span>new</span>
-            <a href="https://vaobo.com/so-sanh-nha-cai/" rel="dofollow">
+            <Link href="/so-sanh-nha-cai/" rel="dofollow">
               So sánh nhà cái
-            </a>
+            </Link>
           </div>
-          <form action="https://vaobo.com/so-sanh-nha-cai/" method="GET">
+          <form action="/so-sanh-nha-cai/" method="GET">
             <label>Vui lòng chọn danh sách nhà cái bên dưới</label>
             <div className="bxallfield">
               <div className="field_item">
