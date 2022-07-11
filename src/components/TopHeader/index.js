@@ -125,14 +125,14 @@ function TopHeader(props) {
                       <a className="menu-title-text">Trò chơi</a>
                     </Link>
                   </li>
-                  <li
+                  {/* <li
                     id="menu-item-5337"
                     className="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-5337"
                   >
                     <Link href="/khuyen-mai/">
                       <a className="menu-title-text">Khuyến mãi</a>
                     </Link>
-                  </li>
+                  </li> */}
                   <li
                     id="menu-item-5338"
                     className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children nectar-regular-menu-item sf-with-ul menu-item-5338"
@@ -187,39 +187,14 @@ function TopHeader(props) {
                     </ul> */}
                   </li>
                   <li
-                    id="menu-item-7707"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children nectar-regular-menu-item sf-with-ul menu-item-7707"
+                    id="menu-item-5360"
+                    className="menu-item menu-item-type-taxonomy menu-item-object-category nectar-regular-menu-item menu-item-5360"
                   >
-                    <Link href="/video/" className="sf-with-ul">
-                      <a>
-                        <span className="menu-title-text">Video</span>
-                        <span className="sf-sub-indicator">
-                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
-                        </span>
-                      </a>
+                    <Link href="/gai-xinh/">
+                      <a className="menu-title-text">Gái Xinh</a>
                     </Link>
-                    {/* <ul className="sub-menu">
-                      <li
-                        id="menu-item-7719"
-                        className="menu-item menu-item-type-taxonomy menu-item-object-tax_highlight nectar-regular-menu-item menu-item-7719"
-                      >
-                        <Link href="/highlight-bong-da/">
-                          <a className="menu-title-text">
-                            Highlight bóng đá
-                          </a>
-                        </Link>
-                      </li>
-                      <li
-                        id="menu-item-7720"
-                        className="menu-item menu-item-type-taxonomy menu-item-object-tax_highlight nectar-regular-menu-item menu-item-7720"
-                      >
-                        <Link href="/video-bong-da/">
-                          <a className="menu-title-text">Video bóng đá</a>
-                        </Link>
-                      </li>
-                    </ul> */}
                   </li>
-                  <li
+                  {/* <li
                     id="menu-item-63110"
                     className="csmenuitem_mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nectar-regular-menu-item sf-with-ul menu-item-63110"
                   >
@@ -227,11 +202,11 @@ function TopHeader(props) {
                       <a>
                         <span className="menu-title-text">Công cụ cá cược</span>
                         <span className="sf-sub-indicator">
-                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
+                          <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} />
                         </span>
                       </a>
                     </Link>
-                    {/* <ul className="sub-menu">
+                    <ul className="sub-menu">
                       <li
                         id="menu-item-63111"
                         className="menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-63111"
@@ -280,17 +255,31 @@ function TopHeader(props) {
                           </a>
                         </Link>
                       </li>
-                    </ul> */}
-                  </li>
-                  <li
+                    </ul>
+                  </li> */}
+                  {/* <li
                     id="menu-item-107655"
                     className="d-md-none menu-item menu-item-type-post_type menu-item-object-page nectar-regular-menu-item menu-item-107655"
                   >
                     <Link href="/gai-xinh/">
                       <a className="menu-title-text">Gái Xinh</a>
                     </Link>
-                  </li>
+                  </li> */}
+                  <li
+                    id="menu-item-63110"
+                    className="csmenuitem_mobile menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nectar-regular-menu-item sf-with-ul menu-item-63110"
+                  >
+                    <Link href={"#"} className="sf-with-ul">
+                      <a>
+                        <span className="menu-title-text">Gái Xinh</span>
+                        <span className="sf-sub-indicator">
+                          {/* <FontAwesomeIcon icon={["fas", "fa-chevron-down"]} /> */}
+                        </span>
+                      </a>
+                    </Link>
+                    </li>
                 </ul>
+                
                 <ul className="buttons sf-menu" data-user-set-ocm="off"></ul>
               </nav>
             </div>

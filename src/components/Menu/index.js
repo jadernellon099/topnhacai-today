@@ -59,12 +59,12 @@ function Menu(props) {
                       So Sánh Nhà Cái
                     </Link>
                   </li>
-                  <li
+                  {/* <li
                     id="menu-item-7451"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-7451"
                   >
                     <Link href="/gai-xinh">Gái Xinh</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

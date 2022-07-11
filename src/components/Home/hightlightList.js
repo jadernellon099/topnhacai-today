@@ -47,7 +47,7 @@ function HightLightList(props) {
   };
 
   return (
-    <div className="bxss bxlistnd marg0">
+    <div className="bxss bxlistnd marg0" style={{marginTop: "20px"}}>
       <div className="bxinner">
         <div className="bxlist_video_cat">
           <div className="bxvideo_contain">

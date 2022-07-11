@@ -43,7 +43,7 @@ function Home(props) {
         <div className="bxinner">
           <div className="bximg">
             <Link
-              href="https://vaobo.com/link/w88"
+              href=""
               rel="nofollow"
               className="seoquake-nofollow"
             >
@@ -62,7 +62,7 @@ function Home(props) {
         </div>
       </div>
       <CommentaryList />
-      <Tips />
+      {/* <Tips /> */}
       {/* <CallApiFootballList /> */}
       <GetHightLightList />
       {/* <HightLightList /> */}
@@ -72,7 +72,7 @@ function Home(props) {
           <div className="bxflex bxflex_mg">
             <div className="bxw50 bximg">
               <Link
-                href="https://vaobo.com/link/fb88"
+                href=""
                 rel="nofollow"
                 className="seoquake-nofollow"
               >
@@ -88,7 +88,7 @@ function Home(props) {
             </div>
             <div className="bxw50 bximg">
               <Link
-                href="https://vaobo.com/link/m88"
+                href=""
                 rel="nofollow"
                 className="seoquake-nofollow"
               >

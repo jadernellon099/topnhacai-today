@@ -1,12 +1,24 @@
 import Link from "next/link";
 import React from "react";
 
+
+
 function NewsList(props) {
+  const createMarkup = (db) => {
+    if (db) {
+      return { __html: db };
+    } else {
+      return { __html: "loading..." };
+    }
+  };
   const commentaryList = () => {
     var result = null;
     var { data } = props;
-    if (data.length > 0) {
-      result = data.map((dt, index) => {
+    
+    if (data&& data.length > 0) {
+      const newArray = [...data].reverse()
+      result = newArray.map((dt, index) => {
+        if(index < 5)
         return (
           <div className="item bxlist_small" key={index}>
             <div
@@ -33,7 +45,7 @@ function NewsList(props) {
               >
                 {dt.post_title}
               </Link>
-              <div className="des">{dt.post_description}</div>
+              <div className="des"><p dangerouslySetInnerHTML={createMarkup(dt.post_description)}></p></div>
             </div>
           </div>
         );
@@ -45,8 +57,13 @@ function NewsList(props) {
   const CasinoOnline = () => {
     var result = null;
     var { data2 } = props;
-    if (data2.length > 0) {
-      result = data2.map((dt, index) => {
+    const newArray = [];
+    if(data2){
+      newArray = [...data2].reverse()
+    }
+    if (data2 && data2.length > 0) {
+      result = newArray.map((dt, index) => {
+        if(index < 5)
         return (
           <div className="item" key={index}>
             <div
@@ -65,7 +82,7 @@ function NewsList(props) {
               <a href={`/tro-choi/` + dt.post_slug} title={dt.post_title}>
                 {dt.post_title}
               </a>
-              <div className="des">{dt.post_description}</div>
+              <div className="des"><p dangerouslySetInnerHTML={createMarkup(dt.post_description)}></p></div>
             </div>
           </div>
         );

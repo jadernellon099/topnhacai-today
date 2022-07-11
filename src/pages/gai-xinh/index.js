@@ -9,8 +9,11 @@ import TaxDescription from "../../components/TaxDescription";
 import Content from "../../components/Content";
 import TrustBet from "../../components/Sidebars/trustBet";
 import AdsImage from "../../components/Sidebars/adsImage";
+import useSWR from "swr";
 import BeautifulGirl from "../../components/BeautifulGirl";
+import Loading from "../../components/Loading";
 
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 function BeautifulGirlPage(props) {
   const postSidebar1 = {
     title: "Nhận định bóng đá",
@@ -22,11 +25,24 @@ function BeautifulGirlPage(props) {
     mark: "HOT",
     bgColor: "#ff4b00",
   };
-  const breadTitle = "Gái Xinh";
-  const Tax = {
-    taxTitle: "Gái Xinh",
-    taxDescription: `Topnhacai.today – <strong>Kho ảnh gái xinh</strong>, tổng hợp hình ảnh và thông tin về các nàng hot girl, <strong>gái xinh sexy</strong> hot nhất hiện nay. Hình ảnh gái xinh tóc ngắn đeo kính, gái xinh mặc thiếu vải, gái xinh ngực khủng, gái xinh bikini, <strong>gái xinh tiktok</strong>…. được cập nhật liên tục tại chuyên mục gái xinh – vào bờ. Ngoài ra bạn có thể tìm hình ảnh và info của bất cứ cô nàng nào đang hot trên mạng tại vaobo.com. Là nơi giải trí hấp dẫn của anh em bet thủ sau những giây phút cá cược đấu trí cân não với <a href="https://vaobo.com/nha-cai-uy-tin/" target="_blank" rel="noopener">nhà cái</a>.`,
-  };
+  const { data: pageData, error: pageError } = useSWR(
+    `${process.env.api_topnhacai}/pages/getBySlug/gai-xinh`,
+    fetcher
+  );
+  const { data: postData, error: postError } = useSWR(`${process.env.api_topnhacai}/posts/getPostByTax?slug=gai-xinh&status=public`,fetcher);
+  if (pageError && postError) return <div>Failed to load</div>;
+  if (!pageData && !postData) {
+    return <Loading />;
+  }
+  var breadTitle = "";
+  var Tax = "";
+  if(pageData){
+    breadTitle = pageData.page_category_name;
+    Tax = {
+      taxTitle: pageData.page_title,
+      taxDescription: pageData.page_description,
+    };
+  }
   return (
     <>
       <Menu />
@@ -40,8 +56,7 @@ function BeautifulGirlPage(props) {
                   <>
                     <Breadcrumbs breadTitle={breadTitle} />
                     <TaxDescription Tax={Tax} />
-                    <BeautifulGirl />
-                    <Content />
+                    <BeautifulGirl data={postData} pageData={pageData} />
                   </>
                 }
               </div>
@@ -62,7 +77,7 @@ function BeautifulGirlPage(props) {
         <Footer />
       </div>
     </>
-  );
+  )
 }
 
 export default BeautifulGirlPage;

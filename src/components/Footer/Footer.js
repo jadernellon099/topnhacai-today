@@ -42,7 +42,7 @@ function Footer(props) {
               <div id="text-2" className="widget widget_text">
                 <div className="textwidget">
                   <p className="font-14">
-                    Vaobo.com cung cấp cho người xem những bài đánh giá về các
+                    Topnhacai.today cung cấp cho người xem những bài đánh giá về các
                     nhà cái online. Dựa trên kinh nghiệm hơn 10 năm trong lĩnh
                     vực cá cược trực tuyến, chúng tôi sẽ cung cấp đầy đủ các
                     thông tin một cách khách quan nhất, đầy đủ và chính xác

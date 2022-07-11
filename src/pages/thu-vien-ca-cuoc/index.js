@@ -5,12 +5,30 @@ import ToolBet from "../../components/Sidebars/toolBet";
 import Footer from "../../components/Footer/Footer";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import CategoryPost from "../../components/Category/CategoryPosts";
+import useSWR from "swr";
 import TrustBet from "../../components/Sidebars/trustBet";
+import Loading from "../../components/Loading";
 
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 function LibraryBetPage(props) {
-  const breadTitle = "Thư viện cá cược";
-  const Tax = `<a href="https://vaobo.com/" target="_blank" rel="noopener">Vào bờ</a> - Nơi chia sẻ những kiến thức hữu ích về cá cược online nhằm giúp bạn hiểu rỏ hơn về thị trường cá cược hiện nay... Cung cấp kiến thức từ cơ bản tới chuyên sâu về tất cả lĩnh vực cá cược, các thông tin cập nhât mới nhất từ các <a href="https://vaobo.com/nha-cai-uy-tin/" target="_blank" rel="noopener">nhà cái uy tín nhất việt nam</a>, nâng tầm kiến thức cho người chơi, tăng tỷ lệ chiến thắng khi tham gia cá cược online.`;
-
+  const { data: pageData, error: pageError } = useSWR(
+    `${process.env.api_topnhacai}/pages/getBySlug/thu-vien-ca-cuoc`,
+    fetcher
+  );
+  const { data: postData, error: postError } = useSWR(`${process.env.api_topnhacai}/posts/getPostByTax?slug=thu-vien-ca-cuoc&status=public`,fetcher);
+  if (pageError && postError) return <div>Failed to load</div>;
+  if (!pageData && !postData) {
+    return <Loading />;
+  }
+  var breadTitle = "";
+  var Tax = "";
+  if(pageData){
+    breadTitle = pageData.page_category_name;
+    Tax = {
+      taxTitle: pageData.page_title,
+      taxDescription: pageData.page_description,
+    };
+  }
   return (
     <>
       <Menu />
@@ -23,7 +41,7 @@ function LibraryBetPage(props) {
                 {
                   <>
                     <Breadcrumbs breadTitle={breadTitle} />
-                    <CategoryPost title={breadTitle} tax={Tax} />
+                    <CategoryPost title={breadTitle} tax={Tax} data={postData} />
                   </>
                 }
               </div>

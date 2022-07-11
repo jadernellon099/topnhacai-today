@@ -26,26 +26,22 @@ function FootballCommentary(props) {
     mark: "HOT",
     bgColor: "#ff4b00",
   };
-  const { data: pageData, error: pageError } = useSWR(
-    `${process.env.api_topnhacai}/pages/getBySlug/nhan-dinh-bong-da`,
-    fetcher
-  );
-  if (pageError) return <div>Failed to load</div>;
-  if (!pageData) {
+  const { data: pageData, error: pageError } = useSWR(`${process.env.api_topnhacai}/pages/getBySlug/nhan-dinh-bong-da`,fetcher);
+  const { data: postData, error: postError } = useSWR(`${process.env.api_topnhacai}/posts/getPostByTax?slug=nhan-dinh-bong-da&status=public`, fetcher)
+  if (pageError && postError) return <div>Failed to load</div>;
+  if (!pageData && !postData) {
     return <Loading />;
   }
-  console.log(pageData);
-
-  // const { data: category } = useSWR(
-  //   `${process.env.api_topnhacai}/pages/page/search?q=nhan-dinh-bong-da`,
-  //   fetcher
-  // );
-
-  const breadTitle = pageData.page_category_name;
-  const Tax = {
-    taxTitle: pageData.page_title,
-    taxDescription: pageData.page_description,
-  };
+  var breadTitle = "";
+  var Tax = {};
+  if(pageData){
+     breadTitle = pageData.page_category_name;
+     Tax = {
+      taxTitle: pageData.page_title,
+      taxDescription: pageData.page_description,
+    };
+  }
+ 
 
   return (
     <>
@@ -60,7 +56,7 @@ function FootballCommentary(props) {
                   <>
                     <Breadcrumbs breadTitle={breadTitle} />
                     <TaxDescription Tax={Tax} />
-                    <PostsSport />
+                    <PostsSport data={postData} />
                     <Content data={pageData} />
                   </>
                 }

@@ -4,8 +4,9 @@ function PostsList(props) {
   const showPostList = () => {
     var result = null;
     var {data} = props;
-    if (data.length > 0) {
-      result = data.map((dt, index) => {
+    if (data && data.length > 0) {
+      const newArray = [...data].reverse()
+      result = newArray.map((dt, index) => {
         if(index < 5)
         return (
           <div className="item" key={index}>

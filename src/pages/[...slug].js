@@ -14,7 +14,6 @@ import useSWR from "swr";
 import Breadcrumbs from '../components/Breadcrumbs';
 import Loading from '../components/Loading';
 import Custom404 from './404';
-import e from 'cors';
 library.add(fab, faCheck, faMinus, faPlus);
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -23,7 +22,7 @@ function PostContentPages(props) {
     const router = useRouter();
     var {slug} = router.query;
 
-    const { data, error } = useSWR(`${process.env.api_topnhacai}/posts/getByStatusAndSlug?status=public&slug=${slug}`, fetcher)
+    const { data, error } = useSWR(`${process.env.api_topnhacai}/posts/getBy/StatusAndSlug?status=public&slug=${slug}`, fetcher)
     if (error) return <div><Custom404 /></div>
     if (!data) return <div><Loading /></div>
     if(data.length === 0){
@@ -36,7 +35,7 @@ function PostContentPages(props) {
         bgColor: "#ff4b00",
       };
 
-    const breadTitle = data[0] && data[0].post_title ? data[0].post_title : "";
+    const breadTitle = data && data.post_title ? data.post_title : "";
     return (
         <>
       <Menu />

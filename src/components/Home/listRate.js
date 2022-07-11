@@ -57,11 +57,13 @@ function ListRateComponent(props) {
       <div className="bxkm">
           <div className="ttkm">
             <span className="ttkm">
-              Thưởng <strong>{dealer.dealer_promotion[0]}%</strong> lên đến
+              {/* Thưởng <strong>{dealer.dealer_promotion.length > 0 && dealer.dealer_promotion[0] ? dealer.dealer_promotion[0] : "100" }%</strong> lên đến */}
+              Thưởng <strong>100%</strong> lên đến
             </span>
             <span className="giakm">
               <FontAwesomeIcon icon={["fas", "fa-gift"]} />
-              {dealer.dealer_promotion[1]}&nbsp;VNĐ
+              {/* {dealer.dealer_promotion.length > 0 && dealer.dealer_promotion[1] ? dealer.dealer_promotion[1] : "1.500.000" }&nbsp;VNĐ */}
+              1.500.000&nbsp;VNĐ
             </span>
           </div>
       </div>
@@ -106,7 +108,7 @@ function ListRateComponent(props) {
           </Link>
         </div>
         <div className="bxdanhgia">
-          <a href="https://vaobo.com/nha-cai-w88/">
+          <a href="">
             Đánh giá
             <FontAwesomeIcon icon={["fas", "fa-chevron-right"]} />
           </a>
