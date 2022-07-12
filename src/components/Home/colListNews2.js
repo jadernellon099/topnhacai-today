@@ -39,7 +39,7 @@ function PostList2(props) {
       <div className="bxinner">
         <div className="bxlistbytax style2">
           <h2>
-            <Link href={props.slug}>{props.title}</Link>
+            <Link href={props.slug}><span>{props.title}</span></Link>
           </h2>
           <div className="bxinner ">{showPostList()}</div>
         </div>

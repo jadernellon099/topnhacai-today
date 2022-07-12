@@ -1,19 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import useSWR from "swr";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
 function ListRateComponent(props) {
   var { dealer, stt } = props;
-
-  // const GetPromotion = (promotion_id) => {
-  //   const { data, error } = useSWR(`${process.env.api}/dealerPromotion/${promotion_id}`, fetcher)
-  //   if (error) return <div>Failed to load</div>
-  //   if (!data) return <div>Loading...</div>
-  //   console.log(promotion_id);
-  // }
 
   const showTag = (tags) => {
     var tag = null;
